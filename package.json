@@ -1,10 +1,16 @@
 {
   "name": "Poker_Face",
+  "jest": {
+    "verbose": true,
+    "setupTestFrameworkScriptFile": "<rootDir>/jestSetup.js"
+  },
   "version": "1.0.0",
   "description": "A simplified browser poker game.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server/index.js",
+    "build": "webpack -w",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -31,6 +37,8 @@
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.2",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
     "jest": "^23.6.0",
     "webpack": "^4.19.1",
     "webpack-cli": "^3.1.0"
