@@ -33,10 +33,10 @@ let deckOfCards = output.slice(0);
 
 /*===== Fisher-Yates shuffle =====*/
 
-const shuffle = (deck, i = 0, j = 0, temp = null) => {
+const shuffle = ( i = 0, j = 0, temp = null) => {
 
   // Making a copy of a deck not to mutate it
-  let shuffledDeck = deck.slice(0);
+  let shuffledDeck = deckOfCards.slice(0);
   
   // Algorithm to shuffle an array
   for (i = shuffledDeck.length - 1; i > 0; i--) {
