@@ -8,7 +8,7 @@ let generateDeck = () => {
   
   // Variable with all the suits and ranks of a deck
   let cards = {
-    suits: ['clubs', 'diamonds', 'hearts', 'spades'],
+    suits: ['♣', '♥', '♦', '♠'],
     ranks: ['ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'jack', 'queen','king']
   };
 
